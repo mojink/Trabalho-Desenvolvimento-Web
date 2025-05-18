@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./style.css"> <!-- puxando o css para a página -->
+    <script> // abrindo a tag de script para o alerta ao clicar no botão
+        function enviarMensagem() { // criando a função do alerta
+            novaJanela=window.alert('Mensagem Enviada!\nObrigado!'); // mensagem do alerta quando o botão for clicado
+        }    
+    </script>
+</head>
+<body>
+    <header class="container-nav"> <!-- criando um container para a navegação -->
+        <div>
+            <a href="./index.html"><img src="./svgs/house.svg" alt="home" height="30" class="home-link"></a> <!-- imagem svg para manter a qualidade e usar como botão home -->
+        </div>
+        <div class="nav-bar">
+            <a href="./sobremim.html">Sobre mim</a> <!-- abrindo as tags de hyperlink para as partes do site -->
+            <a href="./formacoes.html">Formações</a>
+            <a href="./portfolio.html">Portfólio</a>
+            <a href="./contato.html">Contato</a>
+        </div>
+    </header>
+
+    <div id="post"> <!-- tag div para auxiliar no foco do conteúdo da página -->
+        <h1 id="form-title">Meios de Contato</h1> <!-- tag de titulo principal para a página -->
+        <p id="form-content">Caso queira entrar em contato comigo, fique a vontade para mandar uma mensagem:</p> <!-- tag de paragrafo para explicar o conteudo-->
+        <form action="" class="form-container"> <!-- criando um container para organização do formulario -->
+            <span>Nome:</span> <!-- tag sem especificidade para identificação da caixa de texto -->
+            <textarea name="nome" id="form-name"></textarea> <!-- tag do campo de texto para inserir informação -->
+            <br>
+            <span>Email:</span>
+            <textarea name="email" id="form-email"></textarea>
+            <br>
+            <span>Mensagem:</span>
+            <textarea name="mensagem" id="form-msg"></textarea>
+            <br>
+            <button id="button" onclick="enviarMensagem()">Enviar</button> <!-- tag de botão para enviar a mensagem e limpar a página com a função em javascript -->
+            <p>Estarei te aguardando! Obrigado</p>
+        </form>
+   </div>
+
+    <div id="div-footer"> <!-- div para footer de direitos reservados -->
+        <footer>Todos os direitos reservados - Guilherme Ferreira dos Santos</footer>
+    </div>
+
+
+</body>
+</html>

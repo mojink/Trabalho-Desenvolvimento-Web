@@ -1,0 +1,114 @@
+* {  /* tirando as margens e padding da página */
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    background-color: khaki; /* colocando uma cor sólida para o fundo do site geral */
+}
+
+.container-nav { 
+    display: flex; /* atribuindo o flexbox para o container */
+    justify-content: center; /* ajustando o conteudo para centralizar */
+    background-color: #bd6823; /* cor de fundo do menu */
+}
+
+a:link{
+    padding: 5px; /* colocando um pouco de padding para dar um espaço para a tag */
+}
+
+a {
+    color: aliceblue; /* colocando uma cor para as letras */
+    font-size: 1.21rem; /* aumentando a fonte para melhorar a visibilidade */
+    text-decoration: none; /* tirando o underline de hyperlink */
+}
+
+a:hover { /* quando mouser estiver em cima do hyperlink */
+    font-weight: bolder; /* colocando a fonte em negrito */
+    color: white; /* alterando ligeiramente a cor da fonte */
+}
+
+.nav-bar {
+    align-self: center; /* alinhando os hyperlinks com a imagem que leva ao home do site */
+}
+
+ul {
+    list-style: none; /* tirando a decoração da lista */
+}
+
+h1 {
+    margin-bottom: 10px; /* dando um pouco de espaço para destacar o titulo */
+    font-size: 2.2rem; /* destacando o titulo principal da página */
+}
+
+p, li { /* colocando um pouco de margem para criar uma distancia entre os conteudos */
+    margin-top: 3px; 
+    margin-bottom: 12px;
+    font-size: 1.27rem; /* aumentando um pouco a fonte para melhroar a visibilidade */
+
+}
+
+#post {
+    width: 900px; /* tamanho da div do conteudo da página */
+    margin: 30px auto; /* centralizando */
+    padding: 15px;
+    background-color: rgb(80, 45, 45); /* cor de fundo da div para destacar o conteudo */
+    color: white; /* cor da letra dentro da div */
+}
+
+#div-footer {
+    width: 450px; /* ajustando a div do footer */
+    margin: auto; /* centralizando a div */
+    padding: 10px; 
+    background-color: rgb(80, 45, 45);
+    text-align: center; /* alinhando o texto do footer */
+    color: white;
+    font-weight: bold; /* colocando a fonte em negrito */
+    font-size: 17px; /* aumentando um pouco a fonte do footer */
+}
+
+.form-container {
+    display: flex; /* flexbox no formulário para centralizar o conteudo */
+    flex-direction: column; /* colocando em coluna para deixar mais apresentável */
+    align-items: center; /* centralizando os itens */
+}
+
+#button { /* ajustes do tamanho do botão */
+    font-size: 15px;
+    width: 75px;
+    height: 30px;
+    border-radius: 7px; /* deixando as bordas do botão arredondadas */
+    color: black;
+    margin-bottom: 10px; 
+    border: none; /* tirando a borda do botão */
+}
+
+#button:hover { /* quando o mouse estiver em cima do botão */
+    background-color: lightsalmon; /* muda a cor de fundo do botão */
+    font-weight: bold; /* deixa em negrito */
+    width: 90px; /* aumenta o tamanho */
+    height: 35px;
+}
+
+#form-name, #form-email { /* ajustando o tamanho da caixa de texto para o email e nome */
+    height: 20px;
+    width: 300px;
+}
+
+#form-msg {  /* ajustando o tamanho da caixa de texto para a mensagem */
+    height: 200px;
+    width: 400px;
+}
+
+textarea { /* tirando a possibilidade de alteração de tamanho por parte do usuário */
+    resize: none;
+}
+
+#form-title, #form-content {
+    text-align: center;  /* alinhando o texto do formulário */
+}
+
+h2 {  /* dando um pouco mais de espaço para o titulo do conteudo */
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
